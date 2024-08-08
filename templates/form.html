@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    <form action= "{{ url_for('form') }}"method="post">
+        <label for="field1">Field 1:</label>
+        <input type="text" id="maths" name="maths" required><br><br>
+
+        <label for="field2">Field 2:</label>
+        <input type="text" id="sci" name="sci" required><br><br>
+
+        <label for="field3">Field 3:</label>
+        <input type="text" id="social" name="social" required><br><br>
+
+        <button type="submit" cls="btn btn-primary">Calculate Button</button>
+
+        <br>
+        the average marks is {{score}}
+        <br>
+    </form>
+</body>
+</html>
